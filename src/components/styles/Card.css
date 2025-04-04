@@ -69,3 +69,92 @@
   color: #007bff;
   cursor: pointer;
 }
+.info-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.info-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.company {
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.company strong {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #222;
+}
+
+.company .badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.badge.green {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge.blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.company p {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.company a {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .info-card {
+    padding: 15px;
+  }
+
+  .info-card h2 {
+    font-size: 20px;
+  }
+
+  .company {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  .company strong,
+  .company .badge {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .company a {
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
