@@ -36,6 +36,8 @@
 /* Center Navigation */
 .navbar-center {
   display: flex;
+  margin-left: auto; /* Push it to the far right */
+  display: flex;
   gap: 20px;
 }
 
