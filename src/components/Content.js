@@ -19,7 +19,7 @@ const Content = () => {
             <div className="company">
               <strong>Company X</strong>{" "}
               <span className="badge blue">Acquired</span>
-              <p>Details/Information like acquired tech/infra.</p>
+              <p>Details/Information</p>
               <a href="#">View Profile</a>
             </div>
           </Card.Body>
