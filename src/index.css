@@ -1,13 +1,54 @@
 body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #000;
+}
+
+.nav-link {
+  color: white;
+  padding: 10px;
+}
+
+.navbar {
+  background: #000;
+  padding: 10px;
+}
+
+.overview-section,
+.demographics-section {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.insight-box {
+  background: #222;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

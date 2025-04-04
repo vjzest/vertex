@@ -1,0 +1,242 @@
+/* Main Container */
+.demographics-container {
+  position: relative;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  overflow: hidden; /* Ensures content stays within the container */
+}
+
+/* Title */
+.demographics-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Content Layout - Map Left, Chart Right */
+.demographics-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+/* Map Container */
+.map-container {
+  flex: 1;
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+  height: 250px;
+  background-image: url("../../assets/map.avif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 2;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-5deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.map-container:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
+}
+
+/* World Map Image */
+.world-map {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+/* Country Data Chart */
+.demographics-data {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+/* Each Country */
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+/* Country Labels */
+.country-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 100px;
+}
+
+/* Country Logo */
+.country-logo {
+  width: 24px;
+  height: 24px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+/* Filled Progress Bar */
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Country Colors */
+.india {
+  background: purple;
+}
+.usa {
+  background: orange;
+}
+.canada {
+  background: yellow;
+}
+.uae {
+  background: green;
+}
+
+/* Percentage */
+.percentage {
+  width: 50px;
+  text-align: right;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+/* View More */
+.view-more {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.view-more:hover {
+  color: white;
+}
+
+/* Legend Section */
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  min-width: 70px;
+}
+
+/* Legend Colors */
+.legend-item.india {
+  background: purple;
+}
+.legend-item.usa {
+  background: orange;
+}
+.legend-item.canada {
+  background: yellow;
+}
+.legend-item.uae {
+  background: green;
+}
+
+/* 📱 RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  .demographics-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container {
+    width: 90%;
+    height: 200px;
+    max-width: 100%;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .demographics-data {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Ensure country details stay in one row */
+  .country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+  }
+
+  /* Aligns logo, text, and progress bar in one row */
+  .country-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 80px;
+  }
+
+  /* Ensures progress bar fits well */
+  .progress-bar {
+    flex: 1;
+    height: 8px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 100px;
+  }
+
+  /* Ensures percentage stays aligned */
+  .percentage {
+    width: 40px;
+    text-align: right;
+    font-weight: bold;
+    color: #00ff00;
+  }
+
+  /* Legend Adjustments */
+  .legend {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .legend-item {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: auto;
+  }
+}

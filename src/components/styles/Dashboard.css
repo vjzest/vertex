@@ -1,0 +1,50 @@
+/* Ensure Navbar doesn't overlap */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1100; /* Ensure it stays above everything */
+  background: #000;
+  padding: 15px 20px;
+  height: 60px; /* Fixed height for navbar */
+  display: flex;
+  align-items: center;
+}
+
+/* Push content below navbar */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px; /* Same height as navbar */
+}
+
+/* Sidebar Styling */
+.sidebar-container {
+  width: 80px; /* Fixed width */
+  position: fixed;
+  top: 60px; /* Push it below navbar */
+  left: 0;
+  height: calc(100vh - 60px); /* Full height minus navbar */
+  z-index: 1000;
+  background: #000;
+}
+
+/* Adjust content area to avoid overlapping */
+.content-container {
+  margin-left: 300px; /* Push content to the right to avoid overlap */
+  width: calc(100% - 300px);
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: none; /* Hide sidebar in mobile view */
+  }
+
+  .content-container {
+    margin-left: 0;
+    width: 100%;
+  }
+}

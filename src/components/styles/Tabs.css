@@ -1,0 +1,37 @@
+.tabs-container {
+  display: flex;
+  justify-content: flex-start; /* Default alignment */
+  background: black;
+  padding: 10px 20px;
+  margin-left: 300px; /* Push content to the right on desktop */
+  width: calc(100% - 300px);
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Tabs */
+.tab-item {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tab-item:last-child {
+  border-right: none;
+}
+
+.tab-item.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Mobile View: Align Tabs to the Right */
+@media (max-width: 768px) {
+  .tabs-container {
+    justify-content: flex-end; /* Align tabs to the right */
+    margin-left: 0;
+    width: 100%;
+  }
+}

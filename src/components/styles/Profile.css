@@ -1,0 +1,122 @@
+.profile-container {
+  background: #111; /* Dark background */
+  min-height: 100vh;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* Sidebar */
+.sidebar-container {
+  background: #111;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Main Content */
+.content-container {
+  padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #000; /* Black card */
+  border-radius: 10px;
+  color: white; /* White text */
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+.profile-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-card .card-text {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Content Cards */
+.info-card {
+  background: #000; /* Black card */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Company & Experience Sections */
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.company-info {
+  flex: 1;
+  margin-left: 10px;
+  color: white;
+}
+
+.company-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.company-icon.placeholder {
+  background: #333;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.badge.green {
+  background-color: green;
+}
+
+.badge.blue {
+  background-color: blue;
+}
+
+.view-profile {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+}

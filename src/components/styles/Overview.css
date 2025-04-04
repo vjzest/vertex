@@ -1,0 +1,28 @@
+.overview-container {
+  background: #121212;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overview-header h2 {
+  font-size: 22px;
+}
+
+.overview-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.chart-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.percentage {
+  color: #00ff00;
+  font-weight: bold;
+}
